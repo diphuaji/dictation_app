@@ -1,0 +1,37 @@
+{
+  "name": "dictation_app",
+  "version": "1.0.0",
+  "description": "This a general purpose dictation app for whoever struggling to improve listening skills.   Core functions in development.",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --open",
+    "ls": "ls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diphuaji/dictation_app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diphuaji/dictation_app/issues"
+  },
+  "homepage": "https://github.com/diphuaji/dictation_app#readme",
+  "devDependencies": {
+    "vue": "^2.5.16",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "vue": "^2.5.16"
+  }
+}
