@@ -4,9 +4,10 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const VueLoaderPlugin = require('vue-loader/lib/plugin');
 
 module.exports = {
+  mode: 'development',
   entry: {
     main: './src/index.js',
-    functions: './src/functions.js'
+    functions: './src/functions.js',
   },
   devServer: {
     contentBase: './dist',
@@ -19,31 +20,35 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       title: 'Output Management - Billy',
-      template: 'html/index.html'
-    })
+      template: 'html/index.html',
+    }),
+    new VueLoaderPlugin(),
   ],
   output: {
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
   },
+  watch: true,
   module: {
     rules: [
       {
         test: /\.css$/,
         use: [
           'style-loader',
-          'css-loader'
-        ]
+          'css-loader',
+        ],
       },
       {
-          test: /\.vue$/,
-          loader: 'vue-loader'
-      }
-    ]
+        test: /\.vue$/,
+        loader: 'vue-loader',
+      },
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'eslint-loader',
+        options: {
+        },
+      },
+    ],
   },
-  resolve: {
-    alias: {
-      vue: 'vue/dist/vue.esm.js'
-    }
-  }
 };

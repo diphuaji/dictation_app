@@ -1,5 +1,4 @@
-function component(){
+function component() {
   console.log('xxxx');
 }
-export {component};
-
+export default component;

@@ -1,13 +1,9 @@
-import './reset.css';
 import Vue from 'vue';
-import * as fns from './functions.js';
+import './reset.css';
+import main from './components/main.vue';
 
-var app = new Vue({
+new Vue({
   el: '#app',
-  data: {
-    message: 'Hello Vue!'
-  }
+  template: '<main/>',
+  components: { main },
 });
-console.log(app);
-console.log('index.js');
-fns.component();
