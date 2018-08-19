@@ -4,10 +4,10 @@
   "description": "This a general purpose dictation app for whoever struggling to improve listening skills.   Core functions in development.",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "sleep 10",
     "build": "webpack",
     "watch": "webpack --watch",
-    "start": "webpack-dev-server --open",
+    "start": "node build.js",
     "ls": "ls"
   },
   "repository": {
