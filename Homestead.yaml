@@ -1,0 +1,23 @@
+ip: 192.168.10.10
+memory: 2048
+cpus: 4
+provider: virtualbox
+authorize: id_rsa.pub
+keys:
+    - id_rsa
+folders:
+    -   map: .
+        to: /opt/sync
+sites:
+    -   map: homestead.test
+        to: /opt/sync/public
+        php: "7.2"
+databases:
+    - homestead
+ports:
+    -   send: 8080
+        to: 8080
+    -   send: 80
+        to: 80
+name: dictation_app_default_1549348439313_13778
+hostname: vagrant

@@ -5,9 +5,8 @@
 /vendor
 .env
 .phpunit.result.cache
-Homestead.json
-Homestead.yaml
-# php storm
+
+# phpstorm
 /.idea
 
 # Vagrant files
