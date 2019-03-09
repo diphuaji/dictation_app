@@ -6,6 +6,10 @@
 .env
 .phpunit.result.cache
 
+#homestead
+Homestead.yaml
+Homestead.json
+
 # phpstorm
 /.idea
 
