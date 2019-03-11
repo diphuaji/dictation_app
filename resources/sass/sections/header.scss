@@ -1,0 +1,25 @@
+@import '../variables';
+
+header {
+  .btn {
+    outline-style: none;
+    border-radius: 5px;
+    border-width: 1px;
+    border-color:  $gray-600;
+    background-color: $gray-700;
+
+    &:active{
+      border:0;
+      background-color: $gray-600;
+    }
+
+  }
+
+  & > .navbar {
+    min-height: 3.5rem;
+  }
+
+  .navbar--active{
+    background-color: $gray-700;
+  }
+}

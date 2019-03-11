@@ -1,11 +1,25 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/variables';
 
 // Body
 $body-bg: #f8fafc;
 
 // Typography
 $font-family-sans-serif: "Nunito", sans-serif;
-$font-size-base: 0.9rem;
+$font-size-base: 1rem;
 $line-height-base: 1.6;
+
+$font-sizes: (
+  'small':0.8rem,
+  'medium':1rem,
+  'large':1.2rem,
+  'xlarge':1.4rem,
+  'xxlarge':1.6rem
+);
+
+//fontawesome path
+$fa-font-path:        "../webfonts";
 
 // Colors
 $blue: #3490dc;
@@ -18,3 +32,8 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+$white-50: $white 50%;
+
+// other variables
+$sidemenu-width: 12rem;
+$footer-height: 5rem;

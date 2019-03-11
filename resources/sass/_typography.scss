@@ -1,0 +1,6 @@
+@import 'mixins';
+
+@each $name, $size in $font-sizes {
+  @include text-class($name, $size);
+}
+

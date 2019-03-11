@@ -1,0 +1,13 @@
+// this is the file to include functions, mixins and variables
+
+// Bootstrap
+
+// override bootstrap variables if there are any
+@import 'variables';
+@import '~bootstrap/scss/utilities';
+
+// fontawesome
+@import 'icons';
+
+@import 'typography';
+@import 'layout';

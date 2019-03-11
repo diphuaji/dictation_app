@@ -1,0 +1,17 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// purecss
+@import '~purecss/build/pure-min';
+@import '~purecss/build/grids-responsive-min.css';
+
+// other styles
+@import 'all-partial-includes';
+@import 'sections/header';
+@import 'components/sidemenu';
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}

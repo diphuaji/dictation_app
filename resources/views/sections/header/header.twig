@@ -1,0 +1,8 @@
+<header class="d-lg-none">
+    {% block nav %}
+        {% include 'sections.header.navbar' with {
+            'navClass': 'pure-menu-horizontal',
+            'navItems': navItems
+        } %}
+    {% endblock %}
+</header>

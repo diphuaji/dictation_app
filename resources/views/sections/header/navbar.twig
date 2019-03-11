@@ -1,0 +1,17 @@
+<nav class="px-2 d-flex align-items-center justify-content-between justify-content-sm-start text-large navbar navbar-dark bg-dark pure-menu{{ navClass ? ' '~navClass }}">
+    <span class="font-weight-bold text-white-50 py-3">{{ navTitle ?: 'Listening Cake' }}</span>
+    <ul class="d-none d-sm-flex my-0 flex-wrap">
+        {% for nav in navItems %}
+            <li class="pure-menu-item border-dark
+                {{ Route.currentRouteName() == nav.routeName ? ' navbar--active' }}">
+                <a class="text-white-50 h-100 px-1 py-3 d-inline-block  text-decoration-none"
+                   href="{{ nav.link }}">
+                   {{ nav.name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+    <button type="button" class="btn btn-dark my-1 d-block d-sm-none">
+        <i class="fas fa-bars fa-2x d-inline-block d-sm-none"></i>
+    </button>
+</nav>

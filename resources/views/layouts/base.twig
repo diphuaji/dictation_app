@@ -1,0 +1,64 @@
+{# set navItems #}
+{% set navItems = [
+    {
+        'name':'About The App',
+        'routeName':'about',
+        'link' :'/about'
+    },
+    {
+        'name':'Start Practice',
+        'routeName':'app',
+        'link': '/app'
+    },
+    {
+        'name':'User Guide',
+        'routeName':'user-guide',
+        'link': '/user-guide'
+    },
+] %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ title }}</title>
+
+    <!-- Scripts -->
+
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+
+    {% block extraHead %}
+        <link href="{{ asset('css/about.css') }}" rel="stylesheet">
+    {% endblock %}
+</head>
+<body>
+{% block header %}
+    {% include 'sections.header.header' with {
+        'navItems': navItems
+    } %}
+{% endblock %}
+
+<div class="sidemenu-wrapper h-100 position-fixed d-none d-lg-block">
+    {% block sidemenu %}
+        {% include 'components.sidemenu' with {
+            'navItems': navItems
+        } %}
+    {% endblock %}
+</div>
+<div class="main-content position-relative">
+    <h1>Hello there: {{ auth_user().name }}</h1>
+    {% block footer %}
+        {% include 'sections.footer' %}
+    {% endblock %}
+</div>
+
+
+</body>
+</html>

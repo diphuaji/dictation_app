@@ -1,0 +1,19 @@
+@import '../all-partial-includes';
+
+.sidemenu-wrapper {
+  width: $sidemenu-width;
+  top: 0;
+
+  .sidemenu {
+    ul > li {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .sidemenu--active{
+    background-color: $gray-700;
+  }
+
+}

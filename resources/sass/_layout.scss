@@ -1,0 +1,14 @@
+@import 'variables';
+
+// box-sizing
+body, div, a, h1, h2, h3, h4, h5, h6, span, ul, li, input, p {
+  box-sizing: border-box;
+}
+
+body {
+  .main-content {
+    @include media-breakpoint-up('lg') {
+      padding-left: $sidemenu-width;
+    }
+  }
+}

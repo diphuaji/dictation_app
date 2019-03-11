@@ -1,0 +1,7 @@
+@import '~bootstrap/scss/mixins';
+
+@mixin text-class($name, $size) {
+  .text-#{$name} {
+    font-size: $size;
+  }
+}

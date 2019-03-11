@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::auth();
+
+Route::get('/about', 'HomeController@about')->name('about');
+Route::get('/app', 'HomeController@app')->name('app');
+Route::get('/user-guide', 'HomeController@userGuide')->name('user-guide');
