@@ -17,7 +17,7 @@ Homestead.json
 /.idea
 
 # Vagrant files
-Vagrant
+Vagrantfile
 /.vagrant
 
 # Log files
