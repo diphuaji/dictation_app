@@ -4,10 +4,13 @@
 
 // override bootstrap variables if there are any
 @import 'variables';
-@import '~bootstrap/scss/utilities';
 
-// fontawesome
-@import 'icons';
+// bootstrap
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/utilities';
+@import '~bootstrap/scss/navbar';
+@import '~bootstrap/scss/nav';
+@import '~bootstrap/scss/buttons';
 
 @import 'typography';
 @import 'layout';

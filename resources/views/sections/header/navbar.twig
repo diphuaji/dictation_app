@@ -4,14 +4,14 @@
         {% for nav in navItems %}
             <li class="pure-menu-item border-dark
                 {{ Route.currentRouteName() == nav.routeName ? ' navbar--active' }}">
-                <a class="text-white-50 h-100 px-1 py-3 d-inline-block  text-decoration-none"
+                <a class="text-white-50 h-100 px-1 py-3 d-inline-block text-decoration-none"
                    href="{{ nav.link }}">
                    {{ nav.name }}
                 </a>
             </li>
         {% endfor %}
     </ul>
-    <button type="button" class="btn btn-dark my-1 d-block d-sm-none">
+    <button type="button" class="btn btn-dark my-1 d-block d-sm-none text-black ">
         <i class="fas fa-bars fa-2x d-inline-block d-sm-none"></i>
     </button>
 </nav>

@@ -4,14 +4,28 @@ header {
   .btn {
     outline-style: none;
     border-radius: 5px;
-    border-width: 1px;
-    border-color:  $gray-600;
+    border-width: 0;
+    box-shadow: 1px 1px $gray-600;
     background-color: $gray-700;
 
-    &:active{
-      border:0;
+    &:hover {
       background-color: $gray-600;
     }
+
+    &:active {
+      background-color: $gray-600;
+      outline-style: none;
+      border: 0;
+      box-shadow: none;
+    }
+
+    &:focus {
+      outline-style: none;
+      box-shadow: 1px 1px $gray-600;
+    }
+
+
+
 
   }
 
@@ -19,7 +33,7 @@ header {
     min-height: 3.5rem;
   }
 
-  .navbar--active{
+  .navbar--active {
     background-color: $gray-700;
   }
 }
