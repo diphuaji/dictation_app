@@ -15,6 +15,12 @@
 </template>
 
 <script>
+import {Howl, Howler} from 'howler';
+var sound = new Howl({
+  src: ['/audio/mp3/sample.mp3']
+});
+
+sound.play();
 
 export default {
   mounted() {

@@ -55,7 +55,9 @@
     {% endblock %}
 </div>
 <div class="main-content position-relative">
+    {% block content %}
     <h1>Hello there: {{ auth_user().name }}</h1>
+    {% endblock %}
     {% block footer %}
         {% include 'sections.footer' %}
     {% endblock %}
