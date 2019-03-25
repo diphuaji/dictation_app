@@ -28,6 +28,7 @@
     "dependencies": {
         "buefy": "^0.7.3",
         "howler": "^2.1.1",
-        "purecss": "^1.0.0"
+        "purecss": "^1.0.0",
+        "vue-howler": "^0.7.0"
     }
 }

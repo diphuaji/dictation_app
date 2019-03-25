@@ -22,7 +22,7 @@ Vue.use(Buefy);
 
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
-import ExampleComponent from './components/ExampleComponent';
+import App from './components/App';
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -31,6 +31,6 @@ import ExampleComponent from './components/ExampleComponent';
  */
 
 const app = new Vue({
-    el: '#app',
-    render: h => h(ExampleComponent)
+    el: '#main',
+    render: h => h(App)
 });
